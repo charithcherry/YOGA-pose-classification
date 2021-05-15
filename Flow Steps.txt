@@ -1,0 +1,14 @@
+Given : Posenet model js, Posenet Keypoints(17)
+
+Steps:
+1)use keypoints to access x and y coordinates of 3 parts between 2 joint
+example :
+
+shoulder=[LEFT_SHOULDER.value.x,LEFT_SHOULDER.value.y]
+elbow   = [LEFT_ELBOW.value.x,LEFT_ELBOW.value.y]
+wrist   = [LEFT_WRIST.value.x,LEFT_WRIST.value.y]
+
+2) using x and y cordinates from above such examples, we calucate angle at elbow(example) by defining a function.
+3) based on the angle calculated and its range we perform operations.
+
+
